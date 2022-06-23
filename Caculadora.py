@@ -25,3 +25,5 @@ while True:
     else:
         print("Operação Invalida, Digite um opredaor valido")
 
+    if sair =='s':
+        break

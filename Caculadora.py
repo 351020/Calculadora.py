@@ -1,27 +1,27 @@
 while True:
-    num_1 = input("Digite Um número: ")
-    num_2 = input("Digite outro número: ")
-    operador = input('Digite o Operador: ')
 
-    sair = input('Deseja sair? Digite [s]im ou [n]ão:  ').lower()
+    numero_1 = input('Digite um Numero: ')
+    numero_2 = input('Digite outro numero: ')
+    operador = input('Digite o operador: ')
+    sair = input('Deseja Sair [s]Sim [n]Não: ').lower()
 
-    if not num_1.isnumeric() or not num_2.isnumeric():
-        print('Número Invalido Digite o Número corretamente. ')
+    if not numero_1.isnumeric() or not numero_2.isnumeric():
+        print("Voce precisa digitar um numero valido: ou sair ")
         continue
 
-    num_1 = int(num_1)
-    num_2 = int(num_2)
+    numero_1 = int(numero_1)
+    numero_2 = int(numero_2)
 
-    if operador == '+':
-        print(num_1 + num_2)
+    if operador == '*':
+        print(f'A multiplicação do numero: {numero_1}: e {numero_2}: Resultado = {numero_1 * numero_2}')
+    elif operador == '+':
+        soma = numero_1 + numero_2
+        print(f'A Soma do numero: {numero_1}: e {numero_2}: Resultado = {numero_1 + numero_2}')
     elif operador == '-':
-        print(num_1 - num_2)
-    elif operador == '*':
-        print(num_1 * num_2)
+        print(f'A Subtração do numero: {numero_1}: e {numero_2}: Resultado = {numero_1 - numero_2}')
     elif operador == '/':
-        print(num_1 / num_2)
-    else:
-        print('Operação Invalida ')
+        print(f'A Divisão do numero: {numero_1}: e {numero_2}: Resultado = {numero_1 / numero_2}')
 
-    if sair == 's':
-        break
+    else:
+        print("Operação Invalida, Digite um opredaor valido")
+
